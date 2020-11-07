@@ -1,7 +1,11 @@
 node_modules/**/*
+.history/**/*
 .expo/*
 npm-debug.*
+history.*
 *.jks
+*history
+*.history
 *.p8
 *.p12
 *.key
