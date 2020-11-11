@@ -9,9 +9,11 @@ export default function Home({ navigation }) {
 
             <FlatList data={screens} renderItem={({ item, i }) => (
 
-                <TouchableOpacity key={i} onPress={() => navigation.navigate(item.name)} >
+                <TouchableOpacity
+                    style={{ marginTop: 20 }}
+                    key={i} onPress={() => navigation.navigate(item.name)} >
 
-                    <Text>{item.text}</Text>
+                    <Text style={{ fontWeight: 'bold', padding: 3 }}>{item.text}</Text>
 
                 </TouchableOpacity>
             )} />

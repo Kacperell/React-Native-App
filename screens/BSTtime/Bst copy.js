@@ -59,7 +59,10 @@ export default function Bst() {
         let hrs = (s - mins) / 60;
         return hrs + ':' + mins + ':' + secs + '.' + ms;
     }
-
+    function roundTo(value, places) {
+        let power = Math.pow(10, places);
+        return Math.round(value * power) / power;
+    }
     const startBst = () => {
         let tree = new BST();
         const t0 = performance.now()
@@ -70,28 +73,29 @@ export default function Bst() {
         const timeDifference = Math.round(t1 - t0);
         const timeMs = msToTime(timeDifference);
         setTime(`Czas wykoania:${timeMs}`);
+
     }
 
 
     return (
-        <View className='bst' style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View className='bst' >
+            <View style={styles.bstDiv}>
 
 
-            <Text style={styles.bstSpan}>
-                Dodaj {numbersToBst} liczb do binarnego drzewa przeszukiwań.
+                <Text style={styles.bstSpan}>
+                    Dodaj {numbersToBst} liczb do binarnego drzewa przeszukiwań.
               </Text>
-            <Text style={styles.bstSpan}>
-                {time}
-            </Text>
+                <Text style={styles.bstSpan}>
+                    {time}
+                </Text>
 
-            <Button
-                style={styles.button}
-                mode="contained"
-                onPress={startBst}>
+                <Button
+                    style={styles.button}
+                    mode="contained" onPress={startBst}>
 
-                <Text style={{ color: 'white' }}>  Start</Text>
-            </Button>
-
+                    <Text style={{ color: 'white' }}>  Start</Text>
+                </Button>
+            </View>
 
         </View>
     )
@@ -100,10 +104,12 @@ export default function Bst() {
 
 
 const styles = StyleSheet.create({
-    button: {
-
+    bstDiv: {
+        flex: 1,
+        // flexDirection: 'column',
+        alignItems: "center",
+        marginTop: '20',
     },
-
     bstSpan: {
         margin: 10
     }
