@@ -11,7 +11,7 @@ import uuid from 'react-native-uuid';
 
 export default function FormWithDateSaving({ navigation }) {
     const [textNote, setTextNote] = useState('');
-    const [notes, setNotes] = useState(null);
+    const [notes, setNotes] = useState([]);
 
 
     async function fetchNotes() {
@@ -54,7 +54,13 @@ export default function FormWithDateSaving({ navigation }) {
                         return;
                     }
                     storeData(textNote);
-                    let newNotes = notes;
+                    // let newNotes = notes;
+                    let newNotes;
+                    if (notes) {
+                        newNotes = notes;
+                    } else {
+                        newNotes = [];
+                    }
                     newNotes.push(textNote);
                     setNotes(newNotes);
                     setTextNote('');
@@ -89,7 +95,7 @@ const styles = StyleSheet.create({
         width: 300,
         margin: 'auto',
         alignSelf: 'center',
-        color: 'red'
+        // color: 'red'
     },
     buttonAddNoteText: {
         color: 'white',

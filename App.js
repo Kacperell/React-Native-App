@@ -36,8 +36,13 @@ const theme = {
   colors: {
     ...DefaultTheme.colors,
     primary: '#3498db',
-    accent: '#f1c40f',
+    accent: '#3498db',
   },
+  button: {
+    fontSize: 12,
+    color: '#000',
+    backgroundColor: '#fff'
+  }
 };
 
 const Stack = createStackNavigator();
