@@ -35,7 +35,8 @@
     "react-native-web": "~0.13.12",
     "react-native-webview": "^10.10.2",
     "react-native-webview-leaflet": "^5.0.2",
-    "expo-location": "~9.0.0"
+    "expo-location": "~9.0.0",
+    "expo-sensors": "~9.1.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
