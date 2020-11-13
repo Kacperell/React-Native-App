@@ -36,7 +36,9 @@
     "react-native-webview": "^10.10.2",
     "react-native-webview-leaflet": "^5.0.2",
     "expo-location": "~9.0.0",
-    "expo-sensors": "~9.1.0"
+    "expo-sensors": "~9.1.0",
+    "expo-av": "~8.6.0",
+    "expo-file-system": "~9.2.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
