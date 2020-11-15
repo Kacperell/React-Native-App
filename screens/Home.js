@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import screens from '../screensArray';
 export default function Home({ navigation }) {
 
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View style={{ flex: 1 }}>
 
             <FlatList data={screens} renderItem={({ item, i }) => (
 

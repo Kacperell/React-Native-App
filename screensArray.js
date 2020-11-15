@@ -6,6 +6,7 @@ import GPS from './screens/GPS/GPS';
 import AccelerometerScreen from './screens/Accelerometer/AccelerometerScreen';
 import AudioRecorder from './screens/AudioRecorder/AudioRecorder';
 import VideoYT from './screens/VideoYT/VideoYT';
+import ListViewScreen from './screens/ListViewScreen/ListViewScreen';
 
 const screens = [
 
@@ -16,6 +17,7 @@ const screens = [
     { name: 'Accelerometer', text: 'Akcelerometr i żyroskop', component: AccelerometerScreen },
     { name: 'AudioRecorder', text: 'Nagranie dźwieku', component: AudioRecorder },
     { name: 'VideoYT', text: 'Obsługa multimediów', component: VideoYT },
+    { name: 'ListViewScreen', text: 'Dynamiczna lista', component: ListViewScreen },
 
 ];
 export default screens
