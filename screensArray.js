@@ -5,6 +5,7 @@ import Camera from './screens/Camera/CameraScreen';
 import GPS from './screens/GPS/GPS';
 import AccelerometerScreen from './screens/Accelerometer/AccelerometerScreen';
 import AudioRecorder from './screens/AudioRecorder/AudioRecorder';
+import VideoYT from './screens/VideoYT/VideoYT';
 
 const screens = [
 
@@ -12,8 +13,9 @@ const screens = [
     { name: 'Camera', text: 'Dostęp do aparatu', component: Camera },
     { name: 'Bst', text: 'Binarne drzewo poszukiwań - Pomiar czasu', component: Bst },
     { name: 'GPS', text: 'Lokalizacja gps', component: GPS },
-    { name: 'Accelerometer', text: 'Akcelerometr i żyroskop ', component: AccelerometerScreen },
-    { name: 'AudioRecorder', text: 'Nagranie dźwieku ', component: AudioRecorder },
+    { name: 'Accelerometer', text: 'Akcelerometr i żyroskop', component: AccelerometerScreen },
+    { name: 'AudioRecorder', text: 'Nagranie dźwieku', component: AudioRecorder },
+    { name: 'VideoYT', text: 'Obsługa multimediów', component: VideoYT },
 
 ];
 export default screens

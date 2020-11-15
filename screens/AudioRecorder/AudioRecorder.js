@@ -106,7 +106,6 @@ export default function AudioRecorder() {
     };
 
     const playSound = async () => {
-        console.log('PEJ SOUND', sound);
         await sound.setPositionAsync(0);
         await sound.playAsync();
     }
@@ -119,7 +118,7 @@ export default function AudioRecorder() {
                 style={styles.button}
                 mode="contained"
                 onPress={startRecording}>
-                <Text style={{ color: 'white' }}>  NagraJ</Text>
+                <Text style={{ color: 'white' }}>  Nagraj</Text>
             </Button>
             <Button
                 style={styles.button}
