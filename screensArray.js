@@ -7,6 +7,7 @@ import AccelerometerScreen from './screens/Accelerometer/AccelerometerScreen';
 import AudioRecorder from './screens/AudioRecorder/AudioRecorder';
 import VideoYT from './screens/VideoYT/VideoYT';
 import ListViewScreen from './screens/ListViewScreen/ListViewScreen';
+import ModalScreen from './screens/ModalScreen/ModalScreen';
 
 const screens = [
 
@@ -18,6 +19,7 @@ const screens = [
     { name: 'AudioRecorder', text: 'Nagranie dźwieku', component: AudioRecorder },
     { name: 'VideoYT', text: 'Obsługa multimediów', component: VideoYT },
     { name: 'ListViewScreen', text: 'Dynamiczna lista', component: ListViewScreen },
+    { name: 'ModalScreen', text: 'ModalScreen', component: ModalScreen },
 
 ];
 export default screens
