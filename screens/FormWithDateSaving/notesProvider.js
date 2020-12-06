@@ -1,16 +1,29 @@
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 const dbkey = 'dbkey';
-const storeData = async (value) => {
+const storeData = async (value, noteSelect, noteCheckbox, noteRadio) => {
     try {
         let storedValue = await AsyncStorage.getItem(dbkey)
+
         storedValue = storedValue != null ? JSON.parse(storedValue) : null;
 
-        if (storedValue == null) {
-            storedValue = [value];
-        } else {
-            storedValue.push(value);
+        let note = {
+            textNote: value,
+            noteSelect,
+            noteCheckbox,
+            noteRadio
         }
+
+        if (storedValue == null) {
+            storedValue = [note];
+            // storedValue = [value];
+        } else {
+            storedValue.push(note);
+            // storedValue.push(value);
+        }
+
+
+
         const jsonValue = JSON.stringify(storedValue);
         await AsyncStorage.setItem(dbkey, jsonValue);
 
