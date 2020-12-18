@@ -8,6 +8,7 @@ import AudioRecorder from './screens/AudioRecorder/AudioRecorder';
 import VideoYT from './screens/VideoYT/VideoYT';
 import ListViewScreen from './screens/ListViewScreen/ListViewScreen';
 import ModalScreen from './screens/ModalScreen/ModalScreen';
+import Alert from './screens/Alert/Alert';
 
 const screens = [
 
@@ -19,7 +20,8 @@ const screens = [
     { name: 'AudioRecorder', text: 'Nagranie dźwieku', component: AudioRecorder },
     { name: 'VideoYT', text: 'Obsługa multimediów', component: VideoYT },
     { name: 'ListViewScreen', text: 'Dynamiczna lista', component: ListViewScreen },
-    { name: 'ModalScreen', text: 'ModalScreen', component: ModalScreen },
+    { name: 'ModalScreen', text: 'Okna modalne', component: ModalScreen },
+    { name: 'Alert', text: 'Alert', component: Alert },
 
 ];
 export default screens
