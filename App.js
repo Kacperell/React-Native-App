@@ -6,29 +6,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper'
 
 import Home from './screens/Home';
-// import FormWithDateSaving from './screens/FormWithDateSaving/FormWithDateSaving';
+import ComponentsScreen2 from './screens/ComponentsScreen/ComponentsScreen2';
+
 import screens from './screensArray';
 
-// import { Buffer } from 'buffer';
-// global.Buffer = Buffer;
-
-function DetailsScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
-      <Button
-        title="Go to Details... again"
-        onPress={() => navigation.push('Details')}
-      />
-      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
-      <Button title="Go back" onPress={() => navigation.goBack()} />
-      <Button
-        title="Go back to first screen in stack"
-        onPress={() => navigation.popToTop()}
-      />
-    </View>
-  );
-}
 
 const theme = {
   ...DefaultTheme,
@@ -79,6 +60,22 @@ export default function App() {
               },
             }} component={screen.component} />
           ))}
+
+
+
+          <Stack.Screen name="ComponentsScreen2" component={ComponentsScreen2}
+            options={{
+              title: 'Komponenty ekran drugi',
+              headerStyle: {
+                backgroundColor: '#1976d2',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}
+
+          />
 
 
         </Stack.Navigator>

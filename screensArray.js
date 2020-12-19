@@ -9,6 +9,7 @@ import VideoYT from './screens/VideoYT/VideoYT';
 import ListViewScreen from './screens/ListViewScreen/ListViewScreen';
 import ModalScreen from './screens/ModalScreen/ModalScreen';
 import Alert from './screens/Alert/Alert';
+import ComponentsScreen from './screens/ComponentsScreen/ComponentsScreen';
 
 const screens = [
 
@@ -21,6 +22,7 @@ const screens = [
     { name: 'VideoYT', text: 'Obsługa multimediów', component: VideoYT },
     { name: 'ListViewScreen', text: 'Dynamiczna lista', component: ListViewScreen },
     { name: 'ModalScreen', text: 'Okna modalne', component: ModalScreen },
+    { name: 'ComponentsScreen', text: 'Komponenty', component: ComponentsScreen },
     { name: 'Alert', text: 'Alert', component: Alert },
 
 ];
