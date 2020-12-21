@@ -7,7 +7,7 @@ import {
 import { Button, Snackbar } from 'react-native-paper';
 
 function Alert() {
-    const [visible, setVisible] = React.useState(false);
+    const [visible, setVisible] = useState(false);
     const onToggleSnackBar = () => {
         setVisible(true);
         setTimeout(
@@ -31,8 +31,10 @@ function Alert() {
                 className="alert__snackbar"
                 style={styles.alert__snackbar}
             >
-                Przykładowy alert
-      </Snackbar>
+                <Text>
+                    Przykładowy alert
+               </Text>
+            </Snackbar>
         </View>
     )
 }
@@ -44,9 +46,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     alert__snackbar: {
-        margin: 'auto',
-        marginBottom: '30px',
-        maxWidth: '80%',
         color: 'rgb(13, 60, 97)',
         backgroundColor: 'grey',
     }
