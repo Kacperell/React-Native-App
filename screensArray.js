@@ -11,6 +11,7 @@ import ComponentsScreen from './screens/ComponentsScreen/ComponentsScreen';
 import AnimationsScreen from './screens/AnimationsScreen/AnimationsScreen';
 import ModalScreen from './screens/ModalScreen/ModalScreen';
 import Alert from './screens/Alert/Alert';
+import DataSharing from './screens/DataSharing/DataSharing';
 
 const screens = [
 
@@ -26,6 +27,7 @@ const screens = [
     { name: 'ModalScreen', text: 'Okna modalne', component: ModalScreen },
     { name: 'ComponentsScreen', text: 'Komponenty', component: ComponentsScreen },
     { name: 'Alert', text: 'Alert', component: Alert },
+    { name: 'Współdzielenie danych', text: 'Współdzielenie danych', component: DataSharing },
 
 ];
 export default screens

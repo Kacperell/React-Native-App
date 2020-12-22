@@ -7,6 +7,7 @@ import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper'
 
 import Home from './screens/Home';
 import ComponentsScreen2 from './screens/ComponentsScreen/ComponentsScreen2';
+import DataSharing2 from './screens/DataSharing/DataSharing2';
 
 import screens from './screensArray';
 
@@ -74,7 +75,19 @@ export default function App() {
                 fontWeight: 'bold',
               },
             }}
-
+          />
+          <Stack.Screen name="DataSharing2" component={DataSharing2}
+            // initialParams={{ number: 42 }}
+            options={{
+              title: 'Współdzielanie danych',
+              headerStyle: {
+                backgroundColor: '#1976d2',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}
           />
 
 
