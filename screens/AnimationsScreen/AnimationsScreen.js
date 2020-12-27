@@ -49,8 +49,8 @@ const AnimationsScreen = () => {
 
             <View
                 style={{
-                    marginTop: 20,
-                    marginBottom: 20,
+                    marginTop: 40,
+                    marginBottom: 40,
                     alignItems: 'center',
                     flex: 1,
                     justifyContent: 'center',
@@ -65,8 +65,8 @@ const AnimationsScreen = () => {
             </View>
 
             <View style={{
-                marginTop: 20,
-                marginBottom: 20,
+                marginTop: 40,
+                marginBottom: 40,
                 marginLeft: -150,
                 alignItems: 'center',
                 flex: 1,
@@ -82,8 +82,8 @@ const AnimationsScreen = () => {
             </View>
 
             <View style={{
-                marginTop: 20,
-                marginBottom: 20,
+                marginTop: 40,
+                marginBottom: 40,
                 alignItems: 'center',
                 flex: 1,
                 justifyContent: 'center',
@@ -99,8 +99,8 @@ const AnimationsScreen = () => {
 
 
             <View style={{
-                marginTop: 20,
-                marginBottom: 20,
+                marginTop: 40,
+                marginBottom: 40,
                 alignItems: 'center',
                 flex: 1,
                 justifyContent: 'center',
