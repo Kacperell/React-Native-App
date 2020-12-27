@@ -116,7 +116,7 @@ function DownloadingFiles() {
                 <Text style={{ color: 'white' }}>Pobierz zdjęcie (2,36 MB)</Text>
             </Button>
 
-            {photoStatus &&
+            {movieStatus &&
                 <Text>{movieStatus}</Text>
             }
 
