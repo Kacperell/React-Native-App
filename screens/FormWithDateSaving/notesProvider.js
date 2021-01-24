@@ -16,10 +16,8 @@ const storeData = async (value, noteSelect, noteCheckbox, noteRadio) => {
 
         if (storedValue == null) {
             storedValue = [note];
-            // storedValue = [value];
         } else {
             storedValue.push(note);
-            // storedValue.push(value);
         }
 
 
@@ -29,13 +27,10 @@ const storeData = async (value, noteSelect, noteCheckbox, noteRadio) => {
 
     } catch (e) {
         console.log(e);
-        // saving error
     }
 };
 
 const getData = async () => {
-
-    console.log('getData');
 
     try {
         const jsonValue = await AsyncStorage.getItem(dbkey)

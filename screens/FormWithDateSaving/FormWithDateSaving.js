@@ -6,38 +6,26 @@ import { Button } from 'react-native-paper';
 import { Divider, TextInput, Checkbox, RadioButton } from 'react-native-paper';
 import uuid from 'react-native-uuid';
 import RNPickerSelect from 'react-native-picker-select';
-
-// import { blue300 } from 'react-native-paper/lib/typescript/src/styles/colors';
-
-
 export default function FormWithDateSaving({ navigation }) {
     const [textNote, setTextNote] = useState('');
     const [selectValue, setSelectValue] = useState(null);
     const [notes, setNotes] = useState([]);
-
     const [checkbox1, setCheckbox1] = useState(false);
     const [checkbox2, setCheckbox2] = useState(false);
     const [checkbox3, setCheckbox3] = useState(false);
-
     const [redio, setRadio] = useState('radio1');
-
     async function fetchNotes() {
         const notes = await getData();
-        console.log(notes);
         setNotes(notes);
     }
 
-
     useEffect(() => {
-        // await setNotes(getData());
         fetchNotes();
     }, []);
 
 
     const listItem = ({ item }) => (
-        // <Item title={item.title} />
         <View style={{ padding: 3, justifyContent: 'center' }}>
-
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
                 <Text style={{ alignSelf: 'center', paddingRight: 2 }}>{item.textNote}</Text>
                 <Text style={{ alignSelf: 'center' }}>{item.noteSelect}</Text>
@@ -46,12 +34,8 @@ export default function FormWithDateSaving({ navigation }) {
                 <Text style={{ alignSelf: 'center', paddingRight: 2 }}>{item.noteCheckbox}</Text>
                 <Text style={{ alignSelf: 'center' }}>{item.noteRadio}</Text>
             </View>
-
-
             <Divider style={{ alignSelf: 'center', width: '75%', margin: 3 }} />
-
         </View>
-
     );
 
 
@@ -111,8 +95,6 @@ export default function FormWithDateSaving({ navigation }) {
 
             <View>
 
-
-
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <RadioButton
                         value="radio1"
@@ -138,13 +120,9 @@ export default function FormWithDateSaving({ navigation }) {
             <Button
                 style={styles.buttonAddNote}
                 mode="contained" onPress={async () => {
-
-
-
                     if (textNote == '' || !selectValue) {
                         return;
                     }
-
                     let checkboxValues = '';
                     if (checkbox1) checkboxValues = checkboxValues + 'Check 1 ';
                     if (checkbox1) checkboxValues = checkboxValues + 'Check 2 ';
@@ -181,7 +159,6 @@ export default function FormWithDateSaving({ navigation }) {
                 data={notes}
                 renderItem={listItem}
                 key={uuid.v1()}
-            // keyExtractor={uuid.v1()}
             />
 
 
@@ -198,7 +175,6 @@ const styles = StyleSheet.create({
         width: 300,
         margin: 'auto',
         alignSelf: 'center',
-        // color: 'red'
     },
     buttonAddNoteText: {
         color: 'white',
