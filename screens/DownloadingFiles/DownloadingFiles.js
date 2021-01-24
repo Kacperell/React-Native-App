@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import {
-    Alert,
-    Modal,
     StyleSheet,
-    Image,
     Text,
-    View,
-    Linking
+    View
 } from "react-native";
 import { Button } from 'react-native-paper';
 import * as FileSystem from 'expo-file-system';

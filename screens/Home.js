@@ -1,4 +1,3 @@
-// import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import screens from '../screensArray';
