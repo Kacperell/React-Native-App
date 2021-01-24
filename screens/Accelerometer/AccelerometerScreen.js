@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View } from 'react-native';
 import { Accelerometer } from 'expo-sensors';
-
 import { Gyroscope } from 'expo-sensors';
 
 

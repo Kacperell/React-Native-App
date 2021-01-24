@@ -13,7 +13,7 @@ function CameraScreen() {
             if (Platform.OS !== 'web') {
                 const { status } = await ImagePicker.requestCameraRollPermissionsAsync();
                 if (status !== 'granted') {
-                    // alert('Sorry, we need camera roll permissions to make this work!');
+                    // we need camera roll permissions to make this work
                     alert('Error');
                 }
             }
