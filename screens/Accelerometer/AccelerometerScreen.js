@@ -3,11 +3,7 @@ import { Text, View } from 'react-native';
 import { Accelerometer } from 'expo-sensors';
 import { Gyroscope } from 'expo-sensors';
 
-
-
 export default function AccelerometerScreen() {
-
-
     const [dataAccelerometer, setDataAccelerometer] = useState({});
     const [dataGyroscope, setDataGyroscope] = useState({});
 
@@ -18,9 +14,6 @@ export default function AccelerometerScreen() {
         subscribeAccelerometer();
         subscribeGyroscope();
     }, []);
-
-
-
     const subscribeAccelerometer = () => {
         subscriptionAccelerometer = Accelerometer.addListener(accelerometerData => {
             setDataAccelerometer(accelerometerData);
@@ -34,8 +27,6 @@ export default function AccelerometerScreen() {
         Gyroscope.setUpdateInterval(200);
     };
 
-
-
     return (
         <View className='accelerometer' style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text style={{ marginBottom: 15 }}>
@@ -45,11 +36,8 @@ export default function AccelerometerScreen() {
                 Gyroscope : [ {round(dataGyroscope.x)}, {round(dataGyroscope.y)}, {round(dataGyroscope.z)} ]
             </Text>
         </View>
-
-
     )
 }
-
 
 
 function round(n) {

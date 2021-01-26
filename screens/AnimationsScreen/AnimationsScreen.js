@@ -119,6 +119,5 @@ const AnimationsScreen = () => {
 }
 
 
-
 export default AnimationsScreen
 
